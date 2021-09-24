@@ -1,0 +1,30 @@
+{
+  "name": "mongodb-practice",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^6.0.7",
+    "morgan": "~1.9.1"
+  },
+  "description": "Practicing MongoDB",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brandon121j/mongodb-practice.git"
+  },
+  "author": "Brandon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandon121j/mongodb-practice/issues"
+  },
+  "homepage": "https://github.com/brandon121j/mongodb-practice#readme"
+}
