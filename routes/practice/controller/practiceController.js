@@ -38,4 +38,14 @@ module.exports = {
             }
         })
     },
+
+    updatePractice: (id, body, callback) => {
+        Practice.findByIdAndUpdate(id, body, { new : true }, function(err, updatedPractice) {
+            if (err) {
+                callback(err, null)
+            } else {
+                callback(null, updatedPractice)
+            }
+        });
+    },
 }
