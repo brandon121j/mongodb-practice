@@ -9,4 +9,4 @@ git push
 
 read
 
-exit N
+exit 0
