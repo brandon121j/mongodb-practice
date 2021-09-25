@@ -7,6 +7,5 @@ git commit -am "$commitMessage"
 
 git push 
 
-read
 
-xdotool key ctrl+c
+exit 0
