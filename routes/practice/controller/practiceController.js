@@ -48,4 +48,14 @@ module.exports = {
             }
         });
     },
+
+    deletePractice: (id, callback) => {
+        Practice.findByIdAndDelete(id, function(err, deletedPractice) {
+            if (err) {
+                callback(err, null)
+            } else {
+                callback(null, deletedPractice)
+            }
+        })
+    }
 }
