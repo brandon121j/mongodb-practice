@@ -61,3 +61,5 @@ router.delete('/delete-practice-by-id/:id', function(req, res) {
         }
     });
 });
+
+module.exports = router;

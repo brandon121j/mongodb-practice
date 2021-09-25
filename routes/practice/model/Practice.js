@@ -17,6 +17,9 @@ const practiceSchema = new mongoose.Schema(
         over21: {
             type: Boolean,
         }
+    }, 
+    { 
+        timestamps: true 
     }
 )
 
