@@ -1,10 +1,12 @@
-git add .
+git add -A
 
 echo 'Enter the commit message:'
 read commitMessage
 
-git commit -m "$commitMessage"
+git commit -am "$commitMessage"
 
 git push 
 
 read
+
+exit 
