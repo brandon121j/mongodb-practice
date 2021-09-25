@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var practice = require('')
+var practiceRouter = require('./routes/practice/practiceRouter');
 
 mongoose
   .connect("mongodb://localhost:27017/practice", {
@@ -29,7 +29,7 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/practice', )
+app.use('/practice', practiceRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

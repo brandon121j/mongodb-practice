@@ -7,5 +7,4 @@ git commit -am "$commitMessage"
 
 git push 
 
-
 exit 0
