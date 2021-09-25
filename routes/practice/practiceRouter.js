@@ -37,3 +37,15 @@ router.put('/update-practice-by-id/:id', function(req, res) {
         }
     });
 });
+
+router.delete('/delete-practice-by-id/:id', function(req, res) {
+    practiceController.deletePractice(req.params.id, function(err, deletedItem) {
+        if (err) {
+            res
+                .status(500)
+                .json({ message: "Something went wrong!", error: err })
+        } else {
+            res.json({ message: "Item successfully delted!", deletedItem })
+        }
+    });
+});
