@@ -9,4 +9,4 @@ git push
 
 read
 
-exit 0
+xdotool key ctrl+c
